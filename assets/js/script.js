@@ -49,42 +49,48 @@ document.addEventListener('scroll', (e) => {
             item.classList.remove('opa-0')
         }
     });
-    if(isOnScreen(btn_top_girl)){
-        //console.log('window scroll: '+window.scrollY);
-        if(window.scrollY > lastScroll){
-            console.log('abaixando');
-            if(up_img > 0){
-                up_img -= 5;
-                girl_img.style.transform = "translateY("+up_img+"px)";
-            }
-        }else{
-            console.log('subindo');
-            if(up_img < 150){
-                up_img += 5;
-                girl_img.style.transform = "translateY("+up_img+"px)";
-            }
-        }   
+    if(btn_top_girl){
+        if(isOnScreen(btn_top_girl)){
+            //console.log('window scroll: '+window.scrollY);
+            if(window.scrollY > lastScroll){
+                console.log('abaixando');
+                if(up_img > 0){
+                    up_img -= 5;
+                    girl_img.style.transform = "translateY("+up_img+"px)";
+                }
+            }else{
+                console.log('subindo');
+                if(up_img < 150){
+                    up_img += 5;
+                    girl_img.style.transform = "translateY("+up_img+"px)";
+                }
+            }   
+        }
     }
+    
 
     lastScroll = window.scrollY;
 
-    if(isOnScreen(btn_boy)){
-        console.log('is on')
-        if(window.scrollY > lastScroll2){
-            console.log('abaixando 222');
-            if(up_img2 > 0){
-                
-                up_img2 -= 6;
-                curso_right_img.style.transform = "translateY("+up_img2+"px)";
-            }
-        }else{
-            console.log('subindo 222');
-            if(up_img2 < 200){
-                up_img2 += 5;
-                curso_right_img.style.transform = "translateY("+up_img2+"px)";
-            }
-        }   
+    if(btn_boy){
+        if(isOnScreen(btn_boy)){
+            console.log('is on')
+            if(window.scrollY > lastScroll2){
+                console.log('abaixando 222');
+                if(up_img2 > 0){
+                    
+                    up_img2 -= 6;
+                    curso_right_img.style.transform = "translateY("+up_img2+"px)";
+                }
+            }else{
+                console.log('subindo 222');
+                if(up_img2 < 200){
+                    up_img2 += 5;
+                    curso_right_img.style.transform = "translateY("+up_img2+"px)";
+                }
+            }   
+        }
     }
+
 
     lastScroll2 = window.scrollY;
 

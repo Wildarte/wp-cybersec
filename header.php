@@ -28,13 +28,13 @@
                         <img src="<?= get_template_directory_uri(); ?>/assets/img/close.png" alt="" title="">
                     </div>
                 </div>
-                <ul class="list_menu">
+                
                     <?php wp_nav_menu([
                         'menu' => 'Main Menu',
                         'theme_location' => 'my_main_menu',
                         'container' => false
                     ]) ?>
-                </ul>
+                
 
                 <div class="cta_over">
                     <a href="" class="cta_header">

@@ -1,4 +1,6 @@
-<?php include('header.php'); ?>
+<?php include('header.php');
+//Template Name: Home page
+?>
 
     <main>
         <section class="sec_hero">

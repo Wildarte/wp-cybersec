@@ -103,16 +103,16 @@ nav.menu{
     justify-content: flex-end;
     align-items: center;
 }
-nav.menu ul.list_menu{
+nav.menu ul{
     display: flex;
     align-items: center;
     padding-right: 20px;
 }
-nav.menu ul.list_menu li{
+nav.menu ul li{
     overflow: hidden;
     padding: 0 3px;
 }
-nav.menu ul.list_menu li a{
+nav.menu ul li a{
     color: var(--color-white);
     padding: 2px 20px;
     font-size: 1.3em;
@@ -279,7 +279,7 @@ nav.menu ul li:hover  a::after{
 }
 .header_sec_courses h2{
     color: var(--color-yellow);
-    font-size: 5em;
+    font-size: 4em;
     margin-bottom: 20px;
 }
 .header_sec_courses p{
@@ -590,7 +590,7 @@ footer.footer{
     height: 80vh;
 }
 .content_head_cursos{
-    background-image: url(../img/pen-100-min.png);
+    /*background-image: url(../img/pen-100-min.png);*/
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -746,19 +746,19 @@ footer.footer{
     .open_menu_mobile{
         left: 0!important;
     }
-    nav.menu ul.list_menu{
+    nav.menu ul{
         display: flex;
         flex-wrap: wrap;
         padding: 40px 0;
         width: 100%;
     }
-    nav.menu ul.list_menu li{
+    nav.menu ul li{
         width: 100%;
         text-align: center;
         display: flex;
         justify-content: center;
     }
-    nav.menu ul.list_menu li a{
+    nav.menu ul li a{
         padding: 5px 10px;
     }
     .cta_over{
