@@ -12,7 +12,7 @@
 
     <header class="header">
         <div class="container content_header">
-            <a href="">
+            <a href="<?= home_url(); ?>">
                 <?php
                     $custom_logo_id = get_theme_mod( 'custom_logo' );
                     $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
@@ -37,7 +37,7 @@
                 
 
                 <div class="cta_over">
-                    <a href="" class="cta_header">
+                    <a href="<?= home_url(); ?>" class="cta_header">
                         <img src="<?= get_template_directory_uri(); ?>/assets/img/btn-bg.png" alt="">
                         <span>Contato</span>
                     </a>

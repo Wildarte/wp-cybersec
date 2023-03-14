@@ -142,4 +142,21 @@ function my_excerpt_length($length){
 add_filter('excerpt_length', 'my_excerpt_length');
 
 
+function get_id_by_template_name($template_name){
+
+    $page = "";
+
+    $pages = get_pages(array(
+        'meta_key' => '_wp_page_template',
+        'meta_value' => $template_name
+    ));
+    foreach($pages as $page){
+        return   $page->ID;
+    }
+}
+
+
+
+
+
 ?>

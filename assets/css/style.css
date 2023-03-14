@@ -33,8 +33,14 @@
     display: flex;
     flex-wrap: wrap;
 }
+.f-60{
+    flex-basis: 60%;
+}
 .f-50{
     flex-basis: 50%;
+}
+.f-40{
+    flex-basis: 40%;
 }
 .f-25{
     flex-basis: 25%;
@@ -91,6 +97,8 @@ header.header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 2px 2px 10px var(--color-black);
+    position: relative;
 }
 .content_header{
     padding: 30px 10px;
@@ -261,7 +269,13 @@ nav.menu ul li:hover  a::after{
 .btn_girl:hover{
     transform: scale(1.1);
 }
-
+.link_curso{
+    margin: auto;
+    transition: all .23s;
+}
+.link_curso:hover{
+    transform: scale(1.06);
+}
 .sec_courses{
     background-image: url(../img/background-cursos-min.png);
     background-position: top;
@@ -608,6 +622,8 @@ footer.footer{
 .left_header img{
     width: 50%;
     margin-bottom: 40px;
+    height: 40%;
+    object-fit: contain;
 }
 .left_header h2{
     width: 100%;
@@ -663,7 +679,87 @@ footer.footer{
 .content_sec_cursos_about{
     padding: 60px 10px;
 }
+.page_default{
+    color: var(--color-white);
+    padding: 60px 10px;
+}
 /* page cursos */
+
+
+/*  page contato */
+.content_section_contact{
+    background-image: url(../img/background-contato.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: flex-end;
+    padding: 100px 10px;
+}
+.form_over{
+    position: relative;
+}
+.form_over .img_form_over{
+    width: 100%;
+}
+.form_over form{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 60px 80px;
+}
+.form_over form input, .form_over form textarea{
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 1.1em;
+    margin: 8px 0;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+.form_over form p{
+    width: 100%;
+}
+.form_over form input[type=submit]{
+    position: absolute;
+    bottom: 0px;
+    right: 3px;
+    border-radius: 0;
+    width: 250px;
+    font-size: 1.4em;
+    color: var(--color-white);
+    background-color: var(--color-web-200);
+    cursor: pointer;
+}
+.form_over form input[type=submit]::after{
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent; 
+    border-right:25px solid #ABA8B2; 
+}
+.left_contact{
+    padding: 60px 10px
+}
+.content_section_contact .left_contact h2{
+    color: var(--color-yellow);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.content_section_contact .left_contact p{
+    color: var(--color-white);
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+/*  page contato */
 
 
 @media(min-width: 1921px){
@@ -891,6 +987,12 @@ footer.footer{
     }
     .sec_cursos_about{
         margin-top: -350px;
+    }
+    .link_curso{
+        text-align: center;
+    }
+    .link_curso img{
+        width: 75%;
     }
 }
 
