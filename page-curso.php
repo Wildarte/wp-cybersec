@@ -4,8 +4,8 @@
 
 <main>
 
-    <section class="head_cursos">
-        <div class="container content_head_cursos d-flex" style="background-image: url(<?= get_field('imagem_cabecalho')['url']; ?>);">
+    <section class="head_cursos" style="background-image: url(<?= get_field('imagem_cabecalho')['url']; ?>);">
+        <div class="container content_head_cursos d-flex" >
             <div class="f-50 left_header">
                 <img src="<?= get_field('icone_cabecalho')['url']; ?>" alt="">
 
@@ -35,7 +35,7 @@
         </div>
     </section>
 
-    <section class="sec_cursos_about container">
+    <section class="sec_cursos_about">
         <div class="container content_sec_cursos_about">
             <header class="head_about_cursos">
                 <h2>Aprenda os <span class="color-blue">cursos básicos:</span></h2>

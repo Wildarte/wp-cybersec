@@ -37,7 +37,10 @@
                 
 
                 <div class="cta_over">
-                    <a href="<?= home_url(); ?>" class="cta_header">
+                    <?php
+                        $link_pagina_contato = get_field('link_pagina_contato', get_id_by_template_name('page-home.php'));
+                    ?>
+                    <a href="<?= $link_pagina_contato; ?>" class="cta_header">
                         <img src="<?= get_template_directory_uri(); ?>/assets/img/btn-bg.png" alt="">
                         <span>Contato</span>
                     </a>

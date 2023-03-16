@@ -3,6 +3,7 @@
 
 //carregar scripts e folhas de estilo
 function load_scripts(){
+    wp_enqueue_script('js-jquery', get_template_directory_uri().'/assets/js/jquery-3.6.0.min.js', [], '1.0', true);
     wp_enqueue_script('js-scrit', get_template_directory_uri().'/assets/js/script.js', [], '1.0', true);
 
     wp_enqueue_style('css-animation', get_template_directory_uri().'/assets/css/animate.min.css', [], '1.0', 'all');

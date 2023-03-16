@@ -10,6 +10,56 @@ const btn_boy = document.querySelector('.btn_boy');
 const btn_top_girl = document.querySelector('.btn_top_girl');
 const img_group = document.querySelectorAll('.img_group img');
 
+
+//=========================== control submenu ===================================
+
+if(window.matchMedia('(max-width: 1180px)').matches){
+    const itens_menu = document.querySelectorAll('nav.menu ul li.menu-item-has-children');
+    const itens_submenu = document.querySelectorAll('nav.menu ul li.menu-item-has-children ul.sub-menu li.menu-item-has-children');
+    
+    if(itens_menu){
+    
+        itens_menu.forEach((item) => {
+    
+            item.addEventListener('click', (e) => {
+    
+                if(e.target.querySelector('ul.sub-menu').classList.contains('open_menu_item')){
+                    e.target.querySelector('ul.sub-menu').classList.remove('open_menu_item');
+                }else{
+                    e.target.querySelector('ul.sub-menu').classList.add('open_menu_item');
+                }
+                
+    
+            });
+    
+        });
+    
+    }
+    
+    if(itens_submenu){
+    
+        itens_submenu.forEach((item) => {
+    
+            item.addEventListener('click', (e) => {
+    
+                if(e.target.querySelector('ul.sub-menu').classList.contains('open_menu_item')){
+                    e.target.querySelector('ul.sub-menu').classList.remove('open_menu_item');
+                }else{
+                    e.target.querySelector('ul.sub-menu').classList.add('open_menu_item');
+                }
+                
+    
+            });
+    
+        });
+    
+    }
+}
+
+
+
+
+
 //function to verify if element is on screen
 function isOnScreen(el){
     let rect = el.getBoundingClientRect();
@@ -54,7 +104,7 @@ document.addEventListener('scroll', (e) => {
             //console.log('window scroll: '+window.scrollY);
             if(window.scrollY > lastScroll){
                 console.log('abaixando');
-                if(up_img > 0){
+                if(up_img > 40){
                     up_img -= 5;
                     girl_img.style.transform = "translateY("+up_img+"px)";
                 }
@@ -73,17 +123,14 @@ document.addEventListener('scroll', (e) => {
 
     if(btn_boy){
         if(isOnScreen(btn_boy)){
-            console.log('is on')
             if(window.scrollY > lastScroll2){
-                console.log('abaixando 222');
                 if(up_img2 > 0){
                     
                     up_img2 -= 6;
                     curso_right_img.style.transform = "translateY("+up_img2+"px)";
                 }
             }else{
-                console.log('subindo 222');
-                if(up_img2 < 200){
+                if(up_img2 < 170){
                     up_img2 += 5;
                     curso_right_img.style.transform = "translateY("+up_img2+"px)";
                 }
@@ -94,6 +141,7 @@ document.addEventListener('scroll', (e) => {
 
     lastScroll2 = window.scrollY;
 
+if(document.querySelector('.img_first_group')){
     if(isOnScreen(document.querySelector('.img_first_group'))){
         document.querySelector('.img_first_group').classList.add( 'animate__animated', 'animate__zoomIn');
         document.querySelector('.img_first_group').style.setProperty('--animate-delay', '1s')
@@ -136,7 +184,7 @@ document.addEventListener('scroll', (e) => {
         document.querySelector('.img_seventh_group').style.setProperty('--animate-duration', '1s');
         document.querySelector('.img_seventh_group').classList.remove('opa-0')
     }
-
+}
 })
     
 

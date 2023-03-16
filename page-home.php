@@ -1,5 +1,8 @@
 <?php include('header.php');
 //Template Name: Home page
+
+$link_pagina_contato = get_field('link_pagina_contato');
+
 ?>
     <main>
         <section class="sec_hero">
@@ -10,7 +13,7 @@
             </div>
         </section>
 
-        <section class="sec_girl container isonscreen">
+        <section class="sec_girl isonscreen">
             <!-- 
             <img class="img_back_girl" src="assets/img/background-banner-min.png" alt="">
              -->
@@ -24,7 +27,7 @@
 
                     <img class="isonscreen opa-0" src="<?= get_template_directory_uri(); ?>/assets/img/offsec-logo.png" alt="logo Offensive Security" title="logo Offensive Security">
 
-                    <a href="" class="link_curso">
+                    <a href="<?= $link_pagina_contato; ?>" class="link_curso">
                         <img class="btn_girl isonscreen opa-0 btn_top_girl" src="<?= get_template_directory_uri(); ?>/assets/img/saiba-mais.png" alt="">
                     </a>
 
@@ -36,7 +39,7 @@
             </div>
         </section>
 
-        <section class="sec_courses container">
+        <section class="sec_courses">
             <div class="container content_sec_courses">
                 <header class="header_sec_courses">
                     <h2>Certificações Pentest</h2>
@@ -288,14 +291,14 @@
             </div>
         </section>
 
-        <section class="sec_curso container">
+        <section class="sec_curso">
             <div class="container d-flex content_curso">
                 <div class="f-50 curso_left">
                     <header class="header_curso isonscreen opa-0">
                         <img src="<?= get_template_directory_uri(); ?>/assets/img/a-aula-1-caixa.png" alt="" title="">
                     </header>
 
-                    <a href="" class="link_curso">
+                    <a href="<?= $link_pagina_contato; ?>" class="link_curso">
                         <img class="btn_girl isonscreen opa-0 btn_boy" src="<?= get_template_directory_uri(); ?>/assets/img/saiba-mais.png" alt="" title="">
                     </a>   
                 </div>
@@ -360,7 +363,7 @@
             </div>
 
             <div class="container bottom_sec_universo">
-                <a href="" class="link_curso"> 
+                <a href="<?= $link_pagina_contato; ?>" class="link_curso"> 
                     <img class="btn_girl isonscreen opa-0 btn_boy" src="<?= get_template_directory_uri(); ?>/assets/img/saiba-mais.png" alt="" title="">   
                 </a>
             </div>
