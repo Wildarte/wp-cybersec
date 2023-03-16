@@ -1262,7 +1262,7 @@ footer.footer{
     }
     .group_img_mobile img{
         width: 100%;
-        height: auto;
+        height: 100%;
     }
     .header_universo h2{
         position: unset;
@@ -1430,5 +1430,11 @@ footer.footer{
     }
     .left_contact{
         padding: 0 10px;
+    }
+    nav.menu ul li.menu-item-has-children ul.sub-menu li a{
+        font-size: 1em;
+    }
+    nav.menu ul li.menu-item-has-children ul.sub-menu li:last-child{
+        border-bottom: none;
     }
 }

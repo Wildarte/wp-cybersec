@@ -77,6 +77,7 @@ els.forEach((item) => {
         item.classList.add( 'animate__animated', 'animate__bounceIn');
         item.style.setProperty('--animate-delay', '2s')
         item.style.setProperty('--animate-duration', '1s');
+        item.classList.remove('opa-0');
     }
 
 });
@@ -88,6 +89,7 @@ document.addEventListener('scroll', (e) => {
             item.classList.add( 'animate__animated', 'animate__bounceIn');
             item.style.setProperty('--animate-delay', '2s')
             item.style.setProperty('--animate-duration', '1s');
+            item.classList.remove('opa-0');
         }
     
     });
@@ -103,13 +105,11 @@ document.addEventListener('scroll', (e) => {
         if(isOnScreen(btn_top_girl)){
             //console.log('window scroll: '+window.scrollY);
             if(window.scrollY > lastScroll){
-                console.log('abaixando');
                 if(up_img > 40){
                     up_img -= 5;
                     girl_img.style.transform = "translateY("+up_img+"px)";
                 }
             }else{
-                console.log('subindo');
                 if(up_img < 150){
                     up_img += 5;
                     girl_img.style.transform = "translateY("+up_img+"px)";

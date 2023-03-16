@@ -7,7 +7,7 @@ $link_pagina_contato = get_field('link_pagina_contato');
     <main>
         <section class="sec_hero">
             <div class="content_hero">
-                <video autoplay loop muted class="">
+                <video autoplay loop muted playsinline class="">
                     <source src="<?= get_field('video_home'); ?>" type="video/mp4">
                 </video>
             </div>
