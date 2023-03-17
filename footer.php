@@ -18,12 +18,25 @@
             <div class="f-25 col_footer">
                 <h3>CERTIFICAÇÕES</h3>
 
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+                <div class="cer_list">
+                    <a href="https://accyber.com.br/pen-100-2/"><img src="https://accyber.com.br/wp-content/uploads/2023/03/arro.png" alt=""> PEN-100</a>
+                    <a href="https://accyber.com.br/cld-100/"><img src="https://accyber.com.br/wp-content/uploads/2023/03/arro.png" alt=""> CLD-100</a>
+                    <a href="https://accyber.com.br/ssd-100/"><img src="https://accyber.com.br/wp-content/uploads/2023/03/arro.png" alt=""> SSD-100</a>
+                    <a href="https://accyber.com.br/exp-100-3/"><img src="https://accyber.com.br/wp-content/uploads/2023/03/arro.png" alt=""> EXP-100</a>
+
+                    <a href="<?= is_front_page() ? "#cursos" : home_url()."#cursos"; ?>"><strong>Todas...</strong></a>
+                </div>
             </div>
             <div class="f-25 col_footer">
                 <h3>SOCIAL</h3>
 
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+                                
+                <div class="social_footer d-flex">
+                    <a href="https://www.facebook.com/ACSoftware/" class=""><img src="https://accyber.com.br/wp-content/uploads/2023/03/icon-facebook.png" alt=""></a>
+                    <a href="https://www.instagram.com/acsoftwarebr/" class=""><img src="https://accyber.com.br/wp-content/uploads/2023/03/icon-instagram.png" alt=""></a>
+                    <a href="https://www.linkedin.com/company/acsoftware/" class=""><img src="https://accyber.com.br/wp-content/uploads/2023/03/icon-linkedin.png" alt=""></a>
+                    <a href="https://www.youtube.com/user/ACSoftwareBR" class=""><img src="https://accyber.com.br/wp-content/uploads/2023/03/icon-youtube.png" alt=""></a>
+                </div>
             </div>
         </div>
 

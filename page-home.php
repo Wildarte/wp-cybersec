@@ -39,7 +39,7 @@ $link_pagina_contato = get_field('link_pagina_contato');
             </div>
         </section>
 
-        <section class="sec_courses">
+        <section class="sec_courses" id="cursos">
             <div class="container content_sec_courses">
                 <header class="header_sec_courses">
                     <h2>Certificações Pentest</h2>

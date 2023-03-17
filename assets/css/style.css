@@ -25,7 +25,9 @@
     --container: 1200px;
 }
 
-
+html, body{
+    scroll-behavior: smooth;
+}
 
 
 /* general style */
@@ -709,7 +711,29 @@ footer.footer{
 .bottom_sec_universo img{
     margin: auto;
 }
+.social_footer a{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+.social_footer a img{
+    width: 100%;
+}
 
+.cer_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cer_list a{
+    width: 100%;
+    text-align: left;
+    color: #ddd;
+    padding: 4px 10px 4px 0;
+}
+.cer_list a img{
+    width: 10px;
+    margin: 0!important;
+}
 
 
 /* page cursos  */
