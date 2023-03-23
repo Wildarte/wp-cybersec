@@ -32,11 +32,16 @@
                     <img class="btn_girl isonscreen opa-0 btn_boy" src="<?= get_template_directory_uri(); ?>/assets/img/matricule-se-roxo.png" alt="" title="">   
                 </a>
             </div>
+
+            <img class="img_banner_offsec" src="<?= get_template_directory_uri(); ?>/assets/img/banner-offsec-min.png" alt="">
+
         </div>
     </section>
 
     <section class="sec_cursos_about">
         <div class="container content_sec_cursos_about">
+
+            
             <header class="head_about_cursos">
                 <h2>Aprenda os <span class="color-blue">cursos básicos:</span></h2>
             </header>

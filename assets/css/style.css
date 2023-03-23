@@ -340,6 +340,8 @@ nav.menu > ul > li.menu-item-has-children:hover > ul.sub-menu li.menu-item-has-c
 .sec_girl_left img{
     margin-bottom: 40px;
     transition: all .23s;
+    max-width: 300px;
+    height: auto;
 }
 .sec_girl_left img:hover{
     transform: scale(1.05);
@@ -778,7 +780,7 @@ footer.footer{
     color: var(--color-green);
 }
 .info_curso{
-    background-image: url(../img/bk-texto-cursos-min.png);
+    background-image: url(../img/layout-curso-min.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -820,6 +822,11 @@ footer.footer{
 }
 .content_sec_cursos_about{
     padding: 60px 10px;
+    position: relative;
+}
+.img_banner_offsec{
+    max-width: 100%;
+    margin-top: 20px;
 }
 .page_default{
     color: var(--color-white);
@@ -1228,7 +1235,7 @@ footer.footer{
         background-position: left;
     }
     .content_info_curso{
-        padding: 200px 10px 300px;
+        padding: 200px 10px 350px;
     }
     .sec_cursos_about{
         margin-top: -350px;
@@ -1248,6 +1255,9 @@ footer.footer{
     }
     .section_contact{
         padding: 20px 0px;
+    }
+    .img_banner_offsec{
+        top: -250px;
     }
 
 }
@@ -1333,6 +1343,10 @@ footer.footer{
     }
     .sec_girl{
         position: unset;
+    }
+    .img_banner_offsec{
+        position: unset;
+        margin-bottom: 20px;
     }
 }
 @media(max-width: 420px){
@@ -1460,5 +1474,8 @@ footer.footer{
     }
     nav.menu ul li.menu-item-has-children ul.sub-menu li:last-child{
         border-bottom: none;
+    }
+    .content_info_curso{
+        padding: 200px 10px 300px;
     }
 }
