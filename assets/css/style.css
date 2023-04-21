@@ -101,6 +101,7 @@ header.header{
     background-size: cover;
     box-shadow: 2px 2px 10px var(--color-black);
     position: relative;
+    z-index: 10;
 }
 .content_header{
     padding: 30px 10px;
