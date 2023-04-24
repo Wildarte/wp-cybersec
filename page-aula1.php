@@ -265,6 +265,19 @@
             margin-bottom: 20px;
             width: 60%;
         }
+        .content_sec_cursos_about_three ul{
+            list-style: disc;
+            width: 100%;
+            margin-left: 40px;
+            color: #ffffff;
+            font-weight: 400;
+            width: 100%;
+            text-align: justify;
+            font-size: 1.75em;
+        }
+        .content_sec_cursos_about_three h3.certificacoes{
+            margin-top: 40px;
+        }
         .btn_float_video{
             position: absolute;
             top: calc(50% - 125px);
@@ -479,6 +492,9 @@
             .btn_float_video.pause::after{
                 font-size: 150px;
             }
+            .content_sec_cursos_about_three ul{
+                font-size: 1.2em;
+            }
         }
         @media(max-width: 550px){
             .video_frame{
@@ -537,8 +553,8 @@
 
                         <p>Um treinamento desenvolvido para cuidar da segurança do bem mais precioso da sua empresa: <strong>seus dados</strong>.</p>
 
-                        <a href="https://api.whatsapp.com/send?phone=551140639639" class="btn_cta_curso">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/btn-hero-aula1.png" alt="">
+                        <a href="https://api.whatsapp.com/send?phone=551140639639&text=Ol%C3%A1.%20Quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Aula%201" class="btn_cta_curso" target="_blank">
+                            <img src="https://accyber.com.br/wp-content/uploads/2023/04/garanta-sua-vaga.png" alt="">
                         </a>
                     </div>
                     
@@ -580,8 +596,8 @@
                 
                 <div class="d-flex img_boy_two">
                     <div class="f-40 left_boy_two">
-                        <a href="https://api.whatsapp.com/send?phone=551140639639" class="btn_cta_curso">
-                            <img src="<?= get_template_directory_uri(); ?>/assets/img/btn-hero-aula1.png" alt="">
+                        <a href="https://api.whatsapp.com/send?phone=551140639639&text=Ol%C3%A1.%20Quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Aula%201" class="btn_cta_curso" target="_blank">
+                            <img src="https://accyber.com.br/wp-content/uploads/2023/04/garanta-sua-vaga.png" alt="">
                         </a>
                     </div>
                     <div class="f-60 right_boy_two">
@@ -659,14 +675,24 @@
                 <h3>Quase 3 milhões de views no TIKTOK em apenas 1 vídeo</h3>
 
                 <h4><span>Instrutor certificado há mais 10 anos</span></h4>
+
+                <h3 class="certificacoes">Instrutor certificado há mais de 10 anos</h3>
+
+                <ul>
+                    <li>ISC2 CISSP;</li>
+                    <li>ISC2 CCSP;</li>
+                    <li>ISACA CISA;</li>
+                    <li>ISACA CRISC;</li>
+                    <li>Forrester ZeroTrust.</li>
+                </ul>
                 
             </div>
 
             <div class="d-flex last_img">
 
                 <div class="f-40 left_last_img">
-                    <a href="https://api.whatsapp.com/send?phone=551140639639" class="btn_cta_curso">
-                        <img src="<?= get_template_directory_uri(); ?>/assets/img/btn-hero-aula1.png" alt="">
+                    <a href="https://api.whatsapp.com/send?phone=551140639639&text=Ol%C3%A1.%20Quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Aula%201" class="btn_cta_curso" target="_blank">
+                        <img src="https://accyber.com.br/wp-content/uploads/2023/04/garanta-sua-vaga.png" alt="">
                     </a>
                 </div>
 
